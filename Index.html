@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>praktikum javascript</title>
+</head>
+<body>
+    <h2>praktikum basic javascript</h2>
+    <p>lihat hasil melalui console</p>
+
+    <script>
+        const nama = "Fikri";
+        let umur = 19;
+        let nilai = 100;
+        let aktif = true;
+
+        console.log("nama:", nama);
+        console.log("umur:", umur);
+        console.log("Nilai:", nilai);
+        console.log("status aktif:", aktif);
+        console.log("tipe nilai:", typeof nilai);
+        const prodi = "Teknik Informatika";     
+        console.log("prodi:", prodi);
+
+
+        const tugas = 80;
+        const uts = 75;
+        const uas = 50;
+
+        const akhir = tugas * 0.30 + uts * 0.30 + uas * 0.40;
+
+        console.log("nilai akhir:", akhir);
+        console.log("lulus:", akhir >= 60);
+        console.log("tambah:", 10 + 5, "kurang:", 10 - 5, "kali:", 10 * 5, "bagi:", 10 / 5, "sisa bagi:", 10 % 3);
+
+        nilai = 92;
+        let kategori;
+        if (nilai >= 85) {
+            kategori = "A";
+        } else if (nilai >= 70) {
+            kategori = "B";
+        } else if (nilai >= 60) {
+            kategori = "C";
+        } else {
+            kategori = "D";
+        }
+
+        console.log("Nilai:", nilai);
+        console.log("Kategori:", kategori);
+
+        function hitungDiskon(harga, persen) {
+            return harga - (harga * persen / 100);
+        }
+
+        for (let i = 0; i <= 3; i++) {
+            const harga = i * 10000;
+            const bayar = hitungDiskon(harga, 10);
+            console.log("barang:", i, "harga:", harga, "bayar:", bayar);
+        }
+    </script>
+</body>
+</html>
+

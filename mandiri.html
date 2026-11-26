@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktikum Mandiri - Pengolah Nilai</title>
+</head>
+<body>
+    <h2>Praktikum Mandiri: Pengolah Nilai Mahasiswa</h2>
+    <p>Buka Console (F12) untuk melihat hasil.</p>
+
+    <script>
+        const namaMahasiswa = "Fikri";
+        const tugas = 80;
+        const uts = 70;
+        const uas = 90;
+
+        const nilaiAkhir = (tugas * 0.30) + (uts * 0.30) + (uas * 0.40);
+
+        let status;
+        if (nilaiAkhir >= 60) {
+            status = "LULUS";
+        } else {
+            status = "TIDAK LULUS";
+        }
+
+        console.log("Nama Mahasiswa:", namaMahasiswa);
+        console.log("Nilai Akhir:", nilaiAkhir);
+        console.log("Status Kelulusan:", status);
+    </script>
+</body>
+</html> 
